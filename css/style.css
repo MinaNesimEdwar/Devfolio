@@ -1,0 +1,527 @@
+/* variables */
+:root{
+    --main-color:rgb(13,110,253);
+}
+/* General style */
+.special-header::after{
+    content: "";
+    width: 100px ;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -10px;
+    left:0;
+    scroll-behavior: smooth;
+}
+.special-title h2{
+    font-size: 3rem;
+}
+.special-title::after{
+    content: "";
+    width: 40px ;
+    height: 5px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -15px;
+    left:50%;
+    transform: translateX(-50%);
+}
+/* End of general style */
+
+/* Start of navbar */
+.navbar-nav .nav-link.active::after, .navbar-nav .nav-link.show::after{
+    content: "";
+    height: .1rem;
+    width: 80%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.navbar-nav .nav-item:hover::after{
+    content: "";
+    height: .1rem;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation:border 0.8s forwards;
+}
+@keyframes border {
+    from{
+     width: 0%;
+    }
+    to{
+     width: 80%;
+     right: 0;
+     left: 0;
+     bottom: 0;
+    }
+ }
+ @media screen and (max-width: 992px) {
+    .navbar-nav .nav-link.active::after {
+      content: "";
+      width: 0%;
+      height: 0%;
+    }
+    .navbar-nav .nav-item:hover:after {
+      content: "";
+      width: 0%;
+      height: 0%;
+    }
+  }
+/* End of navbar */
+
+/* Start of hero section  */
+.hero{
+    background-image: url(../images/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.hero .container h1{
+    font-size: 4.5rem;
+}
+.hero .container .content p::after {
+    content: "";
+    animation: writting infinite 13s;
+}
+
+@keyframes writting {
+    0% {
+        content: "D|";
+    }
+
+    1% {
+        content: "De|";
+    }
+
+    2% {
+        content: "Des|";
+    }
+
+    3% {
+        content: "Desi|";
+    }
+
+    4% {
+        content: "Desig|";
+    }
+
+    5% {
+        content: "Design|";
+    }
+
+    6% {
+        content: "Designe|";
+    }
+
+    7% {
+        content: "Designer|";
+    }
+
+    8% {
+        content: "Designe|";
+    }
+
+    9% {
+        content: "Design|";
+    }
+
+    10% {
+        content: "Desig|";
+    }
+
+    20% {
+        content: "Desi|";
+    }
+
+    21% {
+        content: "Des|";
+    }
+
+    22% {
+        content: "De|";
+    }
+
+    23% {
+        content: "D|";
+    }
+
+    24% {
+        content: "|";
+    }
+
+    25% {
+        content: "D|";
+    }
+
+    26% {
+        content: "De|";
+    }
+
+    27% {
+        content: "Dev|";
+    }
+
+    28% {
+        content: "Deve|";
+    }
+
+    29% {
+        content: "Devel|";
+    }
+
+    30% {
+        content: "Develo|";
+    }
+
+    31% {
+        content: "Develop|";
+    }
+
+    32% {
+        content: "Develope|";
+    }
+
+    33% {
+        content: "Developer|";
+    }
+
+
+    34% {
+        content: "Develope|";
+    }
+
+
+    35% {
+        content: "Develop|";
+    }
+
+    36% {
+        content: "Develo|";
+    }
+
+
+    37% {
+        content: "Devel|";
+    }
+
+
+    38% {
+        content: "Deve|";
+    }
+
+
+    39% {
+        content: "Dev|";
+    }
+
+
+    40% {
+        content: "De|";
+    }
+
+
+    41% {
+        content: "D|";
+    }
+
+
+    42% {
+        content: "|";
+    }
+
+    52% {
+        content: "P|";
+    }
+
+    53% {
+        content: "Ph|";
+    }
+
+    54% {
+        content: "Pho|";
+    }
+
+    55% {
+        content: "Phot|";
+    }
+
+    56% {
+        content: "Photo|";
+    }
+
+    57% {
+        content: "Photog|";
+    }
+
+    58% {
+        content: "Photogr|";
+    }
+
+    59% {
+        content: "Photogra|";
+    }
+
+    60% {
+        content: "Photograp|";
+    }
+
+    61% {
+        content: "Photograph|";
+    }
+
+    62% {
+        content: "Photographe| ";
+    }
+
+    63% {
+        content: "Photographer|";
+    }
+
+    64% {
+        content: "Photographe|";
+    }
+
+    65% {
+        content: "Photograph|";
+    }
+
+    66% {
+        content: "Photograp|";
+    }
+
+    67% {
+        content: "Photogra|";
+    }
+
+    68% {
+        content: "Photogr|";
+    }
+
+    70% {
+        content: "Photog|";
+    }
+
+    71% {
+        content: "Photo|";
+    }
+
+    72% {
+        content: "Phot|";
+    }
+
+    73% {
+        content: "Pho|";
+    }
+
+    74% {
+        content: "Ph|";
+    }
+
+    75% {
+        content: "P|";
+    }
+
+    80% {
+        content: "|";
+    }
+
+    81% {
+        content: "F|";
+    }
+
+    82% {
+        content: "Fr|";
+    }
+
+    83% {
+        content: "Fre|";
+    }
+
+    84% {
+        content: "Free|";
+    }
+
+    85% {
+        content: "Freel|";
+    }
+
+    86% {
+        content: "Freela|";
+    }
+
+    87% {
+        content: "Freelan|";
+    }
+
+    88% {
+        content: "Freelanc|";
+    }
+
+    89% {
+        content: "Freelance|";
+    }
+
+    90% {
+        content: "Freelancer|";
+    }
+
+    91% {
+        content: "Freelance|";
+    }
+
+    92% {
+        content: "Freelanc|";
+    }
+
+    93% {
+        content: "Freelan|";
+    }
+
+    94% {
+        content: "Freela|";
+    }
+
+    95% {
+        content: "Freel|";
+    }
+
+    96% {
+        content: "Free|";
+    }
+
+    97% {
+        content: "Fre|";
+    }
+    98%{
+        content: "Fr|";
+    }
+    99%{
+        content: "F|";
+    }
+    100% {
+        content: "|";
+    }
+
+}
+@media screen and (max-width:992px){
+
+    .hero .container h1{
+    font-size: 3rem;
+}
+}
+/* End of hero section  */
+
+/* Start of services section */
+.services .item .icon{
+    width: 6.5rem;
+    height: 6.5rem;
+    border: .55rem solid var(--main-color);
+    border-radius: 50%;
+    transition:all 0.5s;
+}
+.services .item:hover .icon{
+    background-color: var(--main-color);
+    color: white;
+    border: .55rem solid rgb(176, 207, 254) ;
+ }
+/* End of services section */
+
+/* Start of counter section */
+.counter{
+    height: 50vh;
+    background-image: url(../images/post-3.jpg);
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+}
+.counter .overlay .icon{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: .55rem solid rgb(176, 207, 254) ;
+}
+/* End of counter section */
+
+/* Start of portfolio section */
+.portfolio .card .card-image img{
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.portfolio .card:hover img{
+    transform: scale(1.2);
+}
+.portfolio .card .left span{
+    font-size: 0.9rem;
+}
+.portfolio .card .right{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+/* End of portfolio section */
+
+/* Start of testimonial section */
+.testimonial{
+    height: 95vh;
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.carousel-indicators [data-bs-target]{
+    width: 1rem;
+    height: 1rem;
+}
+/* End of testimonial section */
+
+/* Start of blog section */
+.blog .card .left img{
+    width: 2rem;
+    height: 2rem;
+}
+.blog .card .left a{
+    color: black;
+    transition: 0.5s all;
+}
+.blog .card .left a:hover{
+    color: var(--main-color);
+}
+/* End of blog section */
+
+/* Start of contact section */
+.contact{
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact form textarea{
+    height: 10rem;
+    resize: none;
+}
+.contact form button{
+    border-radius: 3rem;
+    border: .3rem solid var(--main-color);
+    transition: 0.5s all;
+}
+.contact form button:hover{
+    border: .3rem solid rgb(176, 207, 254) ;
+}
+.contact .social .icon{
+    width: 2.7rem;
+    height: 2.7rem;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    transition:all 0.5s;
+    cursor: pointer;
+}
+.contact .social .icon:hover{
+    background-color: var(--main-color);
+    color: white;
+    border: .2rem solid rgb(176, 207, 254) ;
+ }
+/* End of contact section */
+
+
